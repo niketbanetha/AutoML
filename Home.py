@@ -159,7 +159,7 @@ def instruction_graph():
     graph.edge("Select columns for which prediction hast to be done","Upload test dataset[Optional]")
     graph.edge("Upload test dataset[Optional]","Click on start button")
     graph.edge("Click on start button","Download predicted file and pickle model of best algorithm")
-    st.graphviz_chart(graph,width=500,height=200)
+    st.graphviz_chart(graph)
     
     
  #To check that whether username is already registered or not   
