@@ -2,6 +2,5 @@ graphviz==0.15
 mysql-connector-python==8.0.22
 numpy
 pandas
-scikit-image==0.16.2
-scikit-learn @ file:///C:/ci/scikit-learn_1592853510272/work
+scikit-learn
 streamlit==0.72.0
