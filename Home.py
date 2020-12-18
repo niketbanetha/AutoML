@@ -151,7 +151,7 @@ def classification_func(dftrain=None,dftest=None,x=None,y=None):
     elif s=="LogisticRegression":
         tpred=r.predlm
     elif s=="NB":
-        tpred=r.prednm
+        tpred=r.prednb
     if dftest.empty==False:
         pred=r.prediction(s,dftest)
         return [d,tpred,pred]
