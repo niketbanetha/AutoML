@@ -54,7 +54,7 @@ def best_algorithm(d,_):
 
 def regression_func(dftrain=None,dftest=None,x=None,y=None):
       
-    #st.write("Regression Algorithm is applied to given dataset")  
+    st.write("Regression Algorithm is applied to given dataset")  
     
     progress_bar=st.progress(0)
     
@@ -107,44 +107,43 @@ def regression_func(dftrain=None,dftest=None,x=None,y=None):
     
 def classification_func(dftrain=None,dftest=None,x=None,y=None):
       
-    #st.write("Classification Algorithm is applied to given dataset")  
+    st.write("Classification Algorithm is applied to given dataset")  
     
     progress_bar=st.progress(0)
     
     r=classification.classification()
     
     result=r.features_selection(dftrain[x],dftrain[y])
-    #st.write(result)
+    st.write(result)
     progress_bar.progress(10)
     
     result=r.data_normalization()
-    #st.write(result)
+    st.write(result)
     progress_bar.progress(20)
     
     result=r.data_splitting()
-    #st.write(result)
+    st.write(result)
     progress_bar.progress(30)
     
     result=r.logistic_model()
-    #st.write(result)
+    st.write(result)
     progress_bar.progress(45)
     
     result=r.nb_model()
-    #st.write(result)
+    st.write(result)
     progress_bar.progress(60)
     
     result=r.decision_model()
-    #st.write(result)
+    st.write(result)
     progress_bar.progress(75)
     
     result=r.random_forest()
-    #st.write(result)
+    st.write(result)
     progress_bar.progress(100)
     
     
     d=r.compare_error()
     s=best_algorithm(d,"classification")
-    #print(d)
     if s=="DecisionTreeClassifier":
         tpred=r.preddt
     elif s=="RandomForestClassifier":
