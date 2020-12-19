@@ -1,5 +1,7 @@
+streamlit
 graphviz==0.15
 mysql-connector-python==8.0.22
 numpy
 pandas
 scikit-learn
+
